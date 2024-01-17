@@ -1,0 +1,151 @@
+/*reset básico de CSS*/
+:root {
+    --black: #111;
+    --white: #FFF;
+    --tt-color: #E1E1E6;
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+header nav {
+    position: fixed;
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    padding: 4rem 7.2rem;
+}
+
+header .logo img {
+    margin-right: 3.2rem;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+
+    list-style: none;
+    gap: 3.2rem
+}
+
+nav ul li a {
+    font-size: 2.4rem;
+    color: #FFF;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+nav ul li a:hover,
+.active {
+    font-weight: bold;
+}
+
+#app {
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    
+    display: flex;
+    object-fit: cover;
+}
+
+.home {
+    background-image: url(./images/mountainsuniverse1.png);
+}
+
+.universe {
+    background-image: url(./images/mountainsuniverse2.png);
+}
+
+.exploration {
+    background-image: url(./images/mountainsuniverse3.png);
+}
+
+.container-one {
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    text-align: center;
+}
+
+.container-one h1 {
+    color: var(--tt-color);
+    font-size: 4.8rem;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 2.4rem;
+}
+
+.container-one .btn {
+    width: fit-content;
+    cursor: pointer;
+    background: transparent;
+    text-transform: uppercase;
+    
+    font-weight: bold;
+    font-size: 1.4rem;
+
+    padding: 1.2rem 3.2rem;
+    color: #fff;
+
+    border-radius: 5px;
+    border: 2px solid #FFF;
+}
+
+.container-one .btn:hover {
+    background: #FFF;
+    color: #02799D;
+}
+
+.container-two {
+    display: flex;
+    flex-direction: column;
+
+    margin: 18.5rem 10.2rem;
+}
+
+.container-two h1 {
+    color: var(--tt-color);
+    font-size: 4.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+
+    margin-bottom: 1.6rem;
+}
+
+.container-two p {
+    width: 64.8rem;
+
+    color: var(--Platform-Aliases-Ttulos, #E1E1E6);
+    font-family: Roboto;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.container-two .msg-404 {
+    font-size: 4.8rem;
+}
